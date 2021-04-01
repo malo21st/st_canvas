@@ -9,12 +9,12 @@ URL = 'https://share.streamlit.io/malo21st/st_canvas/main/app_canvas.py'
 st.title("Image Test")
 # Create a canvas component
 canvas_result = st_canvas(
-    stroke_width=15,
+    stroke_width=30,
     stroke_color="black",
     background_color="lightblue",
     update_streamlit=True,
-    height=200,
-    width =200,
+    height=500,
+    width =500,
     drawing_mode="freedraw",
     key="canvas",
 )
