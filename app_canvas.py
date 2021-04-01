@@ -25,4 +25,4 @@ canvas_result = st_canvas(
 # img_qr = qr.make_image()
 # img_qr.save("qr.png")
 # img = Image.open("qr.png")
-st.image(canvas_result)
+# st.image(canvas_result)
