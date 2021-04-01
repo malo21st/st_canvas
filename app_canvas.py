@@ -6,6 +6,7 @@ import qrcode
 
 URL = 'https://share.streamlit.io/malo21st/st_canvas/main/app_canvas.py'
 
+st.title("Image Test")
 # Create a canvas component
 canvas_result = st_canvas(
     stroke_width=15,
@@ -18,4 +19,7 @@ canvas_result = st_canvas(
     key="canvas",
 )
 
-st.image(qrcode.make(URL))
+qr_code = st.image(qrcode.make(URL))
+qr_code.sabe("qr.png")
+img = Image.open("qr.png")
+st.image(img)
