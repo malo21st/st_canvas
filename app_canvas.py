@@ -18,4 +18,4 @@ canvas_result = st_canvas(
     key="canvas",
 )
 
-qrcode.make(URL)
+st.image(qrcode.make(URL))
