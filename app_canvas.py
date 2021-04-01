@@ -5,7 +5,7 @@ from streamlit_drawable_canvas import st_canvas
 
 # Create a canvas component
 canvas_result = st_canvas(
-    fill_color="rgba(255, 165, 0, 0.3)",  # Fixed fill color with some opacity
+#     fill_color="rgba(255, 165, 0, 0.3)",  # Fixed fill color with some opacity
     stroke_width=10,
     stroke_color="black",
     background_color="lightblue",
@@ -15,7 +15,3 @@ canvas_result = st_canvas(
     drawing_mode="freedraw",
     key="canvas",
 )
-
-# Do something interesting with the image data and paths
-if canvas_result.image_data is not None:
-    st.image(canvas_result.image_data)
