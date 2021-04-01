@@ -19,7 +19,9 @@ canvas_result = st_canvas(
     key="canvas",
 )
 
-qr_code = qrcode.make(URL)
-qr_code.save("qr.png")
-img = Image.open("qr.png")
-st.image(img)
+qr = qrcode.QRCode(version=2)
+qr.make(URL)
+img_qr = qr.make_image()
+# qr_code.save("qr.png")
+# img = Image.open("qr.png")
+st.image(img_qr)
