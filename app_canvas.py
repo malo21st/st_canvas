@@ -5,8 +5,7 @@ from streamlit_drawable_canvas import st_canvas
 
 # Create a canvas component
 canvas_result = st_canvas(
-#     fill_color="rgba(255, 165, 0, 0.3)",  # Fixed fill color with some opacity
-    stroke_width=10,
+    stroke_width=15,
     stroke_color="black",
     background_color="lightblue",
     update_streamlit=True,
