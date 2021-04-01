@@ -20,7 +20,7 @@ canvas_result = st_canvas(
 )
 
 qr = qrcode.QRCode(version=2)
-qr.add_data(url)
+qr.add_data(URL)
 qr.make()
 img_qr = qr.make_image()
 # img_qr.save("qr.png")
